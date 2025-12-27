@@ -1,12 +1,15 @@
 #include <stdio.h>
 int main() {
-    int num1, num2, num3, num4;
-    int sum, Multiplication,Division;
-printf("Enter 4 number :>\n");
-scanf("%d %d %d %d", &num1, &num2, &num3,&num4);
-sum = num1 + num2 + num3 + num4;
-Multiplication = num1 *  num2 * num3 * num4;
-Division = num1 * num2 * num3 / num4;
+    int number[11];
+    float sum, divided, zarb, fisad;
+
+    printf("Enter 11 number :)");
+    scanf("%d", &number[i]);
+    sum = sum + number[i];
+    divided = divided - number[i];
+    zarb = zarb * number[i];
+    fisad = number[i]/ fisad;
+    printf(" ===== my worke id ====\n");
 
 printf("This is mu sum number %d\n", sum);
 printf(" multiplication %d\n",Multiplication );
