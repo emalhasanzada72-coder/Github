@@ -15,7 +15,7 @@ printf("This is mu sum number %d\n", sum);
 printf(" multiplication %d\n",Multiplication );
 printf(" Division %d\n", Division);
 
-return 0;
+      return 0;
 
 
 }
