@@ -5,10 +5,14 @@ int main() {
     int sum[2][2];
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++){
+            
             sum [i][j] =a[i][j] + b[i][j];
-
+            printf("%d\t\n",sum[i][j]);
         }
-    }
+    }printf("\n");
+    
+            
+
     return 0;
 
 }
