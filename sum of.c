@@ -1,15 +1,27 @@
 #include <stdio.h>
+
 int main() {
-    int number;
-    for (int i = 0; i < 3; i++){
-    printf("Enter one number:><\n");
-    scanf("%d", &number);
-    if (number == 0)
-    printf("The number is zero:>< %d\n", number);
-    else if (number % 2 == 0)
-    printf("The number id even:>< %d\n", number);
-    else 
-    printf("the number is odd:>< %d\n", number);
+    int a;
+    if (scanf("%d", &a) != 1) return 0;
+    if (a <= 1) {
+        int temp;
+        for (int i = 0; i < a; i++) scanf("%d", &temp);
+        printf("0\n");
+        return 0;
     }
+
+    int current_status, last_status;
+    int changes = 0;
+    scanf("%d", &last_status);
+    for (int i = 1; i < a; i++) {
+        scanf("%d", &current_status);
+        
+        if (current_status != last_status) {
+            changes++;
+        }
+        last_status = current_status;
+    }
+    printf("%d\n", changes);
+
     return 0;
 }
